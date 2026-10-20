@@ -1,0 +1,292 @@
+Runtime cold run 2026-10-20T03:04:42.964415+00:00
+Fresh venv; selected runtime/source inputs copied. Offline original evidence/archive not staged.
+Original-content checksum check explicitly SKIPPED here, not verified.
+STAGE analysis.py
+STAGE apple_proforma.py
+STAGE dated_refresh.py
+STAGE app.py
+STAGE requirements.txt
+STAGE README.md
+STAGE FILE-INVENTORY.csv
+STAGE docs/source_ledger.csv
+STAGE sources/aapl-20250927.txt
+STAGE sources/course_abg_slides.html
+STAGE sources/dgs10_july2026.csv
+STAGE outputs/visible_output.json
+STAGE outputs/dated/visible_output.json
+STAGE outputs/retrospective/visible_output.json
+STAGE tests/test_analysis.py
+STAGE tests/test_refresh.py
+STAGE tests/test_supplied.py
+STAGE tests/test_app.py
+
+$ /private/tmp/apple-project-refresh-venv/bin/python --version
+Python 3.13.1
+EXIT 0
+
+$ /private/tmp/apple-project-refresh-venv/bin/python -m venv /var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv
+EXIT 0
+
+$ /var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/bin/python -m pip install -r requirements.txt
+Collecting streamlit==1.66.0 (from -r requirements.txt (line 1))
+  Using cached streamlit-1.66.0-py3-none-any.whl.metadata (10 kB)
+Collecting pandas==3.0.6 (from -r requirements.txt (line 2))
+  Using cached pandas-3.0.6-cp313-cp313-macosx_11_0_arm64.whl.metadata (79 kB)
+Collecting pypdf==6.21.1 (from -r requirements.txt (line 3))
+  Using cached pypdf-6.21.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting altair!=5.4.0,!=5.4.1,<7,>=5.0.0 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached altair-6.3.0-py3-none-any.whl.metadata (11 kB)
+Collecting click<9,>=7.0 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting numpy<3,>=1.25.0 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached numpy-2.5.4-cp313-cp313-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Collecting packaging>=20 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow<13,>=9.2.0 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached pillow-12.3.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (9.1 kB)
+Collecting pydeck<1,>=0.8.0b4 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached pydeck-0.9.3-py2.py3-none-any.whl.metadata (4.2 kB)
+Collecting protobuf<8,>=5.26.1 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached protobuf-7.36.2-cp310-abi3-macosx_10_9_universal2.whl.metadata (595 bytes)
+Collecting pyarrow!=25.0.0,<27,>=10.0.1 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached pyarrow-26.0.0-cp313-cp313-macosx_12_0_arm64.whl.metadata (3.0 kB)
+Collecting requests<3,>=2.27 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting typing-extensions<5,>=4.10.0 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting starlette<2,>=0.46.0 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting uvicorn<1,>=0.30.0 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting anyio<5,>=4.0.0 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting python-multipart<1,>=0.0.10 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached python_multipart-0.0.32-py3-none-any.whl.metadata (2.1 kB)
+Collecting websockets<18,>=12.0.0 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached websockets-17.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (6.3 kB)
+Collecting itsdangerous<3,>=2.1.2 (from streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting python-dateutil>=2.8.2 (from pandas==3.0.6->-r requirements.txt (line 2))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting jinja2 (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting jsonschema>=3.0 (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting narwhals>=2.4.0 (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached narwhals-2.27.1-py3-none-any.whl.metadata (15 kB)
+Collecting idna>=2.8 (from anyio<5,>=4.0.0->streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==3.0.6->-r requirements.txt (line 2))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting charset_normalizer<4,>=2 (from requests<3,>=2.27->streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached charset_normalizer-3.5.2-cp313-cp313-macosx_10_13_universal2.whl.metadata (46 kB)
+Collecting urllib3<3,>=1.26 (from requests<3,>=2.27->streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests<3,>=2.27->streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+Collecting h11>=0.8 (from uvicorn<1,>=0.30.0->streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached markupsafe-3.0.4-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.7 kB)
+Collecting attrs>=22.2.0 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.0->-r requirements.txt (line 1))
+  Using cached rpds_py-2026.9.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (4.1 kB)
+Using cached streamlit-1.66.0-py3-none-any.whl (10.4 MB)
+Using cached pandas-3.0.6-cp313-cp313-macosx_11_0_arm64.whl (10.1 MB)
+Using cached pypdf-6.21.1-py3-none-any.whl (405 kB)
+Using cached altair-6.3.0-py3-none-any.whl (797 kB)
+Using cached anyio-4.15.1-py3-none-any.whl (132 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Using cached numpy-2.5.4-cp313-cp313-macosx_14_0_arm64.whl (5.4 MB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Using cached pillow-12.3.0-cp313-cp313-macosx_11_0_arm64.whl (4.8 MB)
+Using cached protobuf-7.36.2-cp310-abi3-macosx_10_9_universal2.whl (456 kB)
+Using cached pyarrow-26.0.0-cp313-cp313-macosx_12_0_arm64.whl (36.3 MB)
+Using cached pydeck-0.9.3-py2.py3-none-any.whl (11.4 MB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached python_multipart-0.0.32-py3-none-any.whl (30 kB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached starlette-1.9.0-py3-none-any.whl (80 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached uvicorn-0.54.0-py3-none-any.whl (87 kB)
+Using cached websockets-17.3-cp313-cp313-macosx_11_0_arm64.whl (216 kB)
+Using cached certifi-2026.10.19-py3-none-any.whl (136 kB)
+Using cached charset_normalizer-3.5.2-cp313-cp313-macosx_10_13_universal2.whl (366 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Using cached narwhals-2.27.1-py3-none-any.whl (483 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached attrs-26.1.0-py3-none-any.whl (67 kB)
+Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Using cached markupsafe-3.0.4-cp313-cp313-macosx_11_0_arm64.whl (12 kB)
+Using cached referencing-0.37.0-py3-none-any.whl (26 kB)
+Using cached rpds_py-2026.9.1-cp313-cp313-macosx_11_0_arm64.whl (340 kB)
+Installing collected packages: websockets, urllib3, typing-extensions, six, rpds-py, python-multipart, pypdf, pyarrow, protobuf, pillow, packaging, numpy, narwhals, MarkupSafe, itsdangerous, idna, h11, click, charset_normalizer, certifi, attrs, uvicorn, requests, referencing, python-dateutil, jinja2, anyio, starlette, pydeck, pandas, jsonschema-specifications, jsonschema, altair, streamlit
+Successfully installed MarkupSafe-3.0.4 altair-6.3.0 anyio-4.15.1 attrs-26.1.0 certifi-2026.10.19 charset_normalizer-3.5.2 click-8.5.0 h11-0.16.0 idna-3.20 itsdangerous-2.2.0 jinja2-3.1.6 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 narwhals-2.27.1 numpy-2.5.4 packaging-26.3 pandas-3.0.6 pillow-12.3.0 protobuf-7.36.2 pyarrow-26.0.0 pydeck-0.9.3 pypdf-6.21.1 python-dateutil-2.9.0.post0 python-multipart-0.0.32 referencing-0.37.0 requests-2.34.2 rpds-py-2026.9.1 six-1.17.0 starlette-1.9.0 streamlit-1.66.0 typing-extensions-4.16.0 urllib3-2.8.0 uvicorn-0.54.0 websockets-17.3
+
+[notice] A new release of pip is available: 24.3.1 -> 26.2.1
+[notice] To update, run: /private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/bin/python -m pip install --upgrade pip
+EXIT 0
+
+$ /var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/bin/python -B -m unittest discover -s tests -v
+test_all_cases_articulate_and_fcff_routes (test_analysis.FinanceChecks.test_all_cases_articulate_and_fcff_routes) ... ok
+test_base_year_filing_reconciliation (test_analysis.FinanceChecks.test_base_year_filing_reconciliation) ... ok
+test_financing_and_forecast_cash_do_not_create_fcff_value (test_analysis.FinanceChecks.test_financing_and_forecast_cash_do_not_create_fcff_value) ... ok
+test_frozen_contract_matches_engine (test_analysis.FinanceChecks.test_frozen_contract_matches_engine) ... ok
+test_highest_risk_omitted_vendor_wc_detected (test_analysis.FinanceChecks.test_highest_risk_omitted_vendor_wc_detected) ... ok
+test_monotonicity_changed_input_and_restoration (test_analysis.FinanceChecks.test_monotonicity_changed_input_and_restoration) ... ok
+test_peer_definitions (test_analysis.FinanceChecks.test_peer_definitions) ... ok
+test_published_course_abg_known_answer (test_analysis.FinanceChecks.test_published_course_abg_known_answer) ... ok
+test_published_fcff_definition_and_reverse_known_answer (test_analysis.FinanceChecks.test_published_fcff_definition_and_reverse_known_answer) ... ok
+test_reverse_reprices_and_preservation (test_analysis.FinanceChecks.test_reverse_reprices_and_preservation) ... skipped 'Protected originals not staged in runtime cold run; separate original-content check remains incomplete'
+test_signed_flows_and_boundaries (test_analysis.FinanceChecks.test_signed_flows_and_boundaries) ... ok
+test_controls_reset_and_real_failure_demo (test_app.WorkbenchChecks.test_controls_reset_and_real_failure_demo) ... 2026-10-19 23:06:10.891 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-19 23:06:11.322 The widget with key "growth_shift" was created with a default value but also had its value set via the Session State API.
+Stack (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1041, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+  File "/private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/lib/python3.13/site-packages/streamlit/testing/v1/local_script_runner.py", line 144, in _run_script_thread
+    super()._run_script_thread()
+  File "/private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 436, in _run_script_thread
+    self._run_script(request.rerun_data)
+  File "/private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 949, in _run_script
+    ) = exec_func_with_error_handling(code_to_exec, ctx)
+  File "/private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 136, in exec_func_with_error_handling
+    result = func()
+  File "/private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 924, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/app.py", line 31, in <module>
+    shift=st.sidebar.slider('Growth shift each forecast year (percentage points)',-5.,2.,0.,.5,key='growth_shift')
+  File "/private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/lib/python3.13/site-packages/streamlit/runtime/metrics_util.py", line 725, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/lib/python3.13/site-packages/streamlit/elements/widgets/slider.py", line 839, in slider
+    return self._slider(
+  File "/private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/lib/python3.13/site-packages/streamlit/elements/widgets/slider.py", line 887, in _slider
+    check_widget_policies(
+  File "/private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/lib/python3.13/site-packages/streamlit/elements/lib/policies.py", line 146, in check_widget_policies
+    check_session_state_rules(
+  File "/private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/lib/python3.13/site-packages/streamlit/elements/lib/policies.py", line 90, in check_session_state_rules
+    _LOGGER.warning(
+ok
+test_dated_contract_and_restoration (test_refresh.RefreshChecks.test_dated_contract_and_restoration) ... ok
+test_dated_peers_match_windows_and_definitions (test_refresh.RefreshChecks.test_dated_peers_match_windows_and_definitions) ... ok
+test_ledger_fact_assumption_separation (test_refresh.RefreshChecks.test_ledger_fact_assumption_separation) ... /private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/tests/test_refresh.py:40: ResourceWarning: unclosed file <_io.TextIOWrapper name='/private/var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/docs/source_ledger.csv' mode='r' encoding='UTF-8'>
+  rows={r['id']:r for r in csv.DictReader((ROOT/'docs/source_ledger.csv').open())}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_reported_opening_and_stub_articulation (test_refresh.RefreshChecks.test_reported_opening_and_stub_articulation) ... ok
+test_selected_minimum_cash_bridge (test_refresh.RefreshChecks.test_selected_minimum_cash_bridge) ... ok
+test_selected_retrospective_baseline (test_refresh.RefreshChecks.test_selected_retrospective_baseline) ... ok
+test_timing_bridge_and_boundaries (test_refresh.RefreshChecks.test_timing_bridge_and_boundaries) ... ok
+test_base_case_balances_and_has_positive_fcfe (test_supplied.AppleChecks.test_base_case_balances_and_has_positive_fcfe) ... ok
+test_cash_distributions_do_not_create_value (test_supplied.AppleChecks.test_cash_distributions_do_not_create_value) ... ok
+test_cash_floor_refuses_even_though_balance_sheet_balances (test_supplied.AppleChecks.test_cash_floor_refuses_even_though_balance_sheet_balances) ... ok
+test_larger_rd_reduces_value (test_supplied.AppleChecks.test_larger_rd_reduces_value) ... ok
+test_missing_year_refuses (test_supplied.AppleChecks.test_missing_year_refuses) ... ok
+test_nan_refuses (test_supplied.AppleChecks.test_nan_refuses) ... ok
+test_ppe_error_hidden_by_offsetting_other_asset_refuses (test_supplied.AppleChecks.test_ppe_error_hidden_by_offsetting_other_asset_refuses) ... ok
+test_terminal_growth_must_be_below_discount_rate (test_supplied.AppleChecks.test_terminal_growth_must_be_below_discount_rate) ... ok
+test_typed_cash_refuses_even_without_updating_cached_totals (test_supplied.AppleChecks.test_typed_cash_refuses_even_without_updating_cached_totals) ... ok
+test_vendor_receivable_omission_from_cash_flow_refuses (test_supplied.AppleChecks.test_vendor_receivable_omission_from_cash_flow_refuses) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.815s
+
+OK (skipped=1)
+EXIT 0
+
+$ /var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/bin/python -B analysis.py
+# Apple valuation summary — executed annual-base FCFF
+
+Watch/defer — no current position; authorize refresh research, no trade. Retrospective annual-base illustration at 2025-09-27; evidence through 2026-07-30, retrieved 2026-10-19 local. Not a contemporaneous October 2026 valuation or price target. No supported current market comparison; refresh before any trade.
+
+Annual-base low/base/high: **$72.74 / $125.23 / $172.33 per share**. Scenario range is not a probability interval or current price target.
+
+Base WACC 9.8670%; terminal growth 2.50%; enterprise value 1,846,258.82; explicit PV 515,916.67; terminal PV 1,330,342.15; terminal share of EV 72.06%. All dollar totals USD millions.
+
+Bridge: EV + 102,420 opening surplus assets - 98,657 debt - 0 additional claims = 1,850,021.82 equity / 14,773.260 period-end common shares (millions). Terminal reinvestment/NOPAT is 4.21%; growth divided by that rate implies incremental ROIC 59.33%, a demanding unverified continuing-efficiency assumption. No future cash balance is added. Operating cash retained: 30,000; other liabilities treated as operating with rent/taxes embedded in forecast. This aggregation limits claim completeness; review before trading.
+
+FCFF = EBIT × (1 − 18%) + PP&E depreciation + other D&A − PP&E capex − other reinvestment − increase in operating NWC. Other reinvestment equals other D&A. Cash route = CFO + CFI + NOPAT − net income (equals after-tax interest addback with positive taxable income). Dividends, buybacks and debt repayment are excluded. Annual cash flows arrive at ends of FY2026–2030, discounted 1–5 periods to FY2025 end. Terminal FCFF = FY2030 FCFF × 1.025; continuing reinvestment/cash-conversion ratios assumed stable, not separately forecast FY2031.
+
+SBC remains an operating expense, without addback or future issuance; shares held fixed. Repurchases are treasury distributions, not a forecast of per-share accretion. Per-share values use period-end basic common shares under this cash-equivalent compensation assumption, not EPS diluted weighted-average shares. Outstanding awards need a refreshed fully diluted claim assessment before trading.
+
+Rebuild on next filing; challenge growth if two successive quarters grow below 6% YoY; challenge margin if two successive quarters excluding identifiable refunds fall below 47%; reassess capex if trailing capex/revenue exceeds 4%; suspend conclusions on any failed check. Consider initiation only after a dated refresh, peer review and price at least 20% below refreshed base value.
+
+See docs/source_ledger.csv, docs/assumption_challenges.csv, outputs/sensitivity.csv, outputs/visible_output.json and docs/validation-and-ai-use.md. The earlier $127.62 FCFE and $224 proxy results are separate methods, not endpoints. Comparables are historical diagnostics with fiscal/share lags; no current peer target is inferred or averaged with DCF.
+
+EXIT 0
+
+$ /var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/bin/python -B dated_refresh.py
+{'low': 78.52, 'base': 119.6, 'high': 181.3}
+EXIT 0
+HASH outputs/visible_output.json: before=7862849f21a5542611df190281da837d6bfa830ac213568c320bd6c90be2148f after=7862849f21a5542611df190281da837d6bfa830ac213568c320bd6c90be2148f
+HASH outputs/dated/visible_output.json: before=7862849f21a5542611df190281da837d6bfa830ac213568c320bd6c90be2148f after=7862849f21a5542611df190281da837d6bfa830ac213568c320bd6c90be2148f
+HASH outputs/retrospective/visible_output.json: before=f608fe6da5ff2a63b7b5a0f7f21cbe3e82733acd4fb2dceb1487fb8c5a22c301 after=f608fe6da5ff2a63b7b5a0f7f21cbe3e82733acd4fb2dceb1487fb8c5a22c301
+
+$ /var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/bin/python -m pip freeze
+altair==6.3.0
+anyio==4.15.1
+attrs==26.1.0
+certifi==2026.10.19
+charset-normalizer==3.5.2
+click==8.5.0
+h11==0.16.0
+idna==3.20
+itsdangerous==2.2.0
+Jinja2==3.1.6
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+MarkupSafe==3.0.4
+narwhals==2.27.1
+numpy==2.5.4
+packaging==26.3
+pandas==3.0.6
+pillow==12.3.0
+protobuf==7.36.2
+pyarrow==26.0.0
+pydeck==0.9.3
+pypdf==6.21.1
+python-dateutil==2.9.0.post0
+python-multipart==0.0.32
+referencing==0.37.0
+requests==2.34.2
+rpds-py==2026.9.1
+six==1.17.0
+starlette==1.9.0
+streamlit==1.66.0
+typing_extensions==4.16.0
+urllib3==2.8.0
+uvicorn==0.54.0
+websockets==17.3
+EXIT 0
+
+$ /var/folders/g_/dv_1n5y517187hqfvxlm60km0000gp/T/apple-runtime-cold-2rcijr6a/project/.venv/bin/python -B -m streamlit run app.py --server.headless=true --server.address=127.0.0.1 --server.port=8767 --browser.gatherUsageStats=false
+HTTP health 200: ok
+2026-10-19 23:06:14.278 Uvicorn server started on 127.0.0.1:8767
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://127.0.0.1:8767
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+
+Runtime cold check COMPLETED: tests with explicit preservation skip, both models byte-identical, HTTP health passed; server stopped.
+NOT a complete original-evidence preservation verification or human access/review.

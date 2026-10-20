@@ -1,0 +1,27 @@
+[
+  {
+    "file": "course_abg_tutorial.md",
+    "url": "https://raw.githubusercontent.com/CinderZhang/FIN43900-Fall2026/main/lessons/week-05/pro-forma-abg-tutorial.md",
+    "status": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)'))"
+  },
+  {
+    "file": "apple_fy26q3.pdf",
+    "url": "https://www.apple.com/newsroom/pdfs/fy2026q3/FY26_Q3_Consolidated_Financial_Statements.pdf",
+    "status": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)'))"
+  },
+  {
+    "file": "apple_q3_release.html",
+    "url": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
+    "status": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)'))"
+  },
+  {
+    "file": "microsoft_ar25.html",
+    "url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+    "status": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)'))"
+  },
+  {
+    "file": "damodaran_fcff.pdf",
+    "url": "https://pages.stern.nyu.edu/~adamodar/pdfiles/eqnotes/fcff.pdf",
+    "status": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)'))"
+  }
+]

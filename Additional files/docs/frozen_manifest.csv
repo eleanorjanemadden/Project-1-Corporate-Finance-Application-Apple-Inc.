@@ -1,0 +1,24 @@
+path,sha256,scope
+README.md,69eb8f639ca2f57d7b16243a765afe62e2c9e0a2152ea442281010491ab339fa,selected active files only; originals/archive/other files NOT verified
+START-HERE.md,ad5e6af663a24af8d9cb5cfb9f2fb04187372cdbbbc53a109dfda35f594bebdb,selected active files only; originals/archive/other files NOT verified
+requirements.txt,ae0aba29df1e30f62539e660e3aa1f8ff1b9e8890d211f3db63abe09763a76bb,selected active files only; originals/archive/other files NOT verified
+analysis.py,32a143b0acfff7090c9f7f34819a8ad2fe46de540622a5e06d43051dde8bfb62,selected active files only; originals/archive/other files NOT verified
+dated_refresh.py,acdd1af11e6107770f806d9cc8887fcb136ae7258fb842a9f3652f0a26243369,selected active files only; originals/archive/other files NOT verified
+apple_proforma.py,3f3cdc053d82ecaa47e1ff15a8472f42acb673e61da44d44b2f15546a96ec8ec,selected active files only; originals/archive/other files NOT verified
+app.py,464ef619fb1e9f148ec8afd09eb2664d1335088fcd23c25184424424503529ac,selected active files only; originals/archive/other files NOT verified
+tests/test_refresh.py,b575119b84bd63b6d2c7d45680bd036878dc4d305f7d08bd21ad791cf3ce1e10,selected active files only; originals/archive/other files NOT verified
+docs/decision-memo.md,4a5d2ae73212d5bbe929bb3ee56ded726dc3d4fb4336c479f9c17506fbc3841a,selected active files only; originals/archive/other files NOT verified
+docs/research-evolution.md,678ff7afcda239c5538f43cb9dc5a3fc9cd113b445ab94f3d4081c46791461b6,selected active files only; originals/archive/other files NOT verified
+docs/validation-and-ai-use.md,4fa0cedec6dd376b7ae6a28f2993c51d0d184c8a6e295273f40070effae4709f,selected active files only; originals/archive/other files NOT verified
+docs/completion_status.md,cd5a6a9e54f200f56e6ec0344576962c9cd1ffc8a4b02663555e1ea2f8e59123,selected active files only; originals/archive/other files NOT verified
+docs/video_preparation_outlines.md,b257ebcab1f4cb8a37c64ebab1950a1dbf908e962c3f5a3a18d8c84465b9459f,selected active files only; originals/archive/other files NOT verified
+docs/model_change_record.md,0017cedca9f6dbac687bf7afd53e02153f5755326586c2c7a2d920db48479dad,selected active files only; originals/archive/other files NOT verified
+docs/source_ledger.csv,5099b50b264832299c68edf5f2a2b1f363a45c9ad3719fadae22c5a4bc4ac0f4,selected active files only; originals/archive/other files NOT verified
+outputs/visible_output.json,7862849f21a5542611df190281da837d6bfa830ac213568c320bd6c90be2148f,selected active files only; originals/archive/other files NOT verified
+outputs/dated/visible_output.json,7862849f21a5542611df190281da837d6bfa830ac213568c320bd6c90be2148f,selected active files only; originals/archive/other files NOT verified
+outputs/retrospective/visible_output.json,f608fe6da5ff2a63b7b5a0f7f21cbe3e82733acd4fb2dceb1487fb8c5a22c301,selected active files only; originals/archive/other files NOT verified
+outputs/valuation_summary.md,210ae09e4877372a5ebe663e6d39209a9d60f7e28bf73d59df7b968d5d352c92,selected active files only; originals/archive/other files NOT verified
+outputs/validation_results.md,41dda9ea2f103d7fd5888126805e81e0197f5324d2b104702c0413aa8d97cc47,selected active files only; originals/archive/other files NOT verified
+outputs/package_analysis_run.log,1fc93856afaa28a8a3ce7f000b3d50e05367711feff97b6e6290b913fe248209,selected active files only; originals/archive/other files NOT verified
+outputs/package_dated_run.log,05437e77e5a17953513f5c6153b1986f5d4318f3a6e22c9ba71753e629711e19,selected active files only; originals/archive/other files NOT verified
+outputs/package_tests.log,e13762c7fa9634c93258776581be24ed841e3d5ce8733e28a995ebfc510916e0,selected active files only; originals/archive/other files NOT verified

@@ -1,0 +1,97 @@
+[
+  {
+    "path": "existing_work/lab06/Lab6_.md",
+    "sha256": "a267fb42f4ca317232878842596e8f9e7455b56d7fe51383463a742d9f91ccbd",
+    "bytes": 3271
+  },
+  {
+    "path": "existing_work/lab06/dcf.py",
+    "sha256": "569a80431d8d7fcb580f83b7ca78fefae2fa01f3d054823876cdc6fa8207189c",
+    "bytes": 14699
+  },
+  {
+    "path": "existing_work/lab07/Lab7.md",
+    "sha256": "519c24573bb35565655f7361aea8472b0afd278b859c2128dd0d4c3ea80a30ec",
+    "bytes": 2679
+  },
+  {
+    "path": "existing_work/lab07/peer_pe_valuation.py",
+    "sha256": "de299fc616c17421c795f73594b6829f18950c1346418f8311576bdbdc55364a",
+    "bytes": 4191
+  },
+  {
+    "path": "existing_work/lab10/Lab_10_Apple.md",
+    "sha256": "a8d44901cdcdc9e18b2997432a72d759d1a23e6245c59331917eb9444e2aeae5",
+    "bytes": 22747
+  },
+  {
+    "path": "existing_work/lab10/apple_forecast.csv",
+    "sha256": "2c1aa07bdbba31ff35add048f80e49a9ab38443f89662bd3f085672f19048a11",
+    "bytes": 4136
+  },
+  {
+    "path": "existing_work/lab10/apple_proforma.py",
+    "sha256": "fcc37e20e530d0bbf8628c00b8afa520676b1d7182f7a45c50b03a93ce0d5f4d",
+    "bytes": 18116
+  },
+  {
+    "path": "existing_work/lab10/apple_results.md",
+    "sha256": "68a383b23f538daccbcc93db4cfb3345efc267b7f1651080443b81cdbf99d980",
+    "bytes": 5773
+  },
+  {
+    "path": "existing_work/lab10/test_apple_proforma.py",
+    "sha256": "510e0933fe722a41639792addfad5be971e4c56dd91cb3b80697ee5f08abb9d7",
+    "bytes": 3313
+  },
+  {
+    "path": "existing_work/lab11/Lab_11_Apple.md",
+    "sha256": "484979b97e3dc67f729e7d7dc94960992683576d8ff441b946fe2862f936321a",
+    "bytes": 6179
+  },
+  {
+    "path": "existing_work/lab11/Locked_Changed_Input_Record(1).md",
+    "sha256": "58e10656980603cc3a7706638db5f31344e2315edd7359d4540a6d9e9782019a",
+    "bytes": 2520
+  },
+  {
+    "path": "existing_work/lab11/base_output(1).md",
+    "sha256": "d19291a7f4ccc1a21e6e9e20c2f09cd6f9b1dde0a9340b0201f1ec369dc38198",
+    "bytes": 5774
+  },
+  {
+    "path": "existing_work/lab11/base_snapshot(1).json",
+    "sha256": "4e5f84fd5ef190a0e357d38745b56b3d505f5e80e8b7a6c5dc53b33b93821c7f",
+    "bytes": 14327
+  },
+  {
+    "path": "existing_work/lab11/base_verification(1).txt",
+    "sha256": "dd5eef75bf52a5ff0dad53e959cdfb629eb6fb1ce44b34767be0ffecaae7cfaa",
+    "bytes": 478
+  },
+  {
+    "path": "existing_work/lab11/capture_base.py",
+    "sha256": "e13fa581693ede60b93a1a07066303ea60ba507d519352b164f09a6653476899",
+    "bytes": 3293
+  },
+  {
+    "path": "existing_work/lab12/Lab_12.md",
+    "sha256": "230f317c34a53b6cff6e6c3971ced95d20aec12d0459d6e818f0ee913652845e",
+    "bytes": 8937
+  },
+  {
+    "path": "existing_work/research/Apple_2026-09-03_report.md",
+    "sha256": "e2fa998e30f4cf252beb8e088ad9ecceff0a5c39e3a087626f4058eebf07dc03",
+    "bytes": 12102
+  },
+  {
+    "path": "existing_work/research/Project 1 Edition A.md",
+    "sha256": "4852fb37285810860c121df72279b140d05c5a68dfa1d660401e66f08f6aa657",
+    "bytes": 7042
+  },
+  {
+    "path": "existing_work/research/sources.md",
+    "sha256": "37bca5371ad4d302a226a8cf4c79f05b8ba06f54086ab05d29ee3069ce737cf4",
+    "bytes": 3151
+  }
+]

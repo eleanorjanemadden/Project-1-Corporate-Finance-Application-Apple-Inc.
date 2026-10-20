@@ -1,0 +1,84 @@
+test_all_cases_articulate_and_fcff_routes (test_analysis.FinanceChecks.test_all_cases_articulate_and_fcff_routes) ... ok
+test_base_year_filing_reconciliation (test_analysis.FinanceChecks.test_base_year_filing_reconciliation) ... ok
+test_financing_and_forecast_cash_do_not_create_fcff_value (test_analysis.FinanceChecks.test_financing_and_forecast_cash_do_not_create_fcff_value) ... ok
+test_frozen_contract_matches_engine (test_analysis.FinanceChecks.test_frozen_contract_matches_engine) ... ok
+test_highest_risk_omitted_vendor_wc_detected (test_analysis.FinanceChecks.test_highest_risk_omitted_vendor_wc_detected) ... ok
+test_monotonicity_changed_input_and_restoration (test_analysis.FinanceChecks.test_monotonicity_changed_input_and_restoration) ... ok
+test_peer_definitions (test_analysis.FinanceChecks.test_peer_definitions) ... ok
+test_published_course_abg_known_answer (test_analysis.FinanceChecks.test_published_course_abg_known_answer) ... ok
+test_published_fcff_definition_and_reverse_known_answer (test_analysis.FinanceChecks.test_published_fcff_definition_and_reverse_known_answer) ... ok
+test_reverse_reprices_and_preservation (test_analysis.FinanceChecks.test_reverse_reprices_and_preservation) ... skipped 'OneDrive read unavailable; preservation NOT reverified: READ existing_work/lab06/dcf.py'
+test_signed_flows_and_boundaries (test_analysis.FinanceChecks.test_signed_flows_and_boundaries) ... ok
+test_basis_selector_preserves_each_baseline (test_app.WorkbenchChecks.test_basis_selector_preserves_each_baseline) ... 2026-10-19 23:06:59.971 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-19 23:07:00.506 The widget with key "growth_shift" was created with a default value but also had its value set via the Session State API.
+Stack (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 1041, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+  File "/private/tmp/apple-project-refresh-venv/lib/python3.13/site-packages/streamlit/testing/v1/local_script_runner.py", line 144, in _run_script_thread
+    super()._run_script_thread()
+  File "/private/tmp/apple-project-refresh-venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 436, in _run_script_thread
+    self._run_script(request.rerun_data)
+  File "/private/tmp/apple-project-refresh-venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 949, in _run_script
+    ) = exec_func_with_error_handling(code_to_exec, ctx)
+  File "/private/tmp/apple-project-refresh-venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 136, in exec_func_with_error_handling
+    result = func()
+  File "/private/tmp/apple-project-refresh-venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 924, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/eleanormadden/Library/CloudStorage/OneDrive-purdue.edu/Fall 2026/AI finance applications/Project 1/Apple-Project-1/app.py", line 31, in <module>
+    shift=st.sidebar.slider('Growth shift each forecast year (percentage points)',-5.,2.,0.,.5,key='growth_shift')
+  File "/private/tmp/apple-project-refresh-venv/lib/python3.13/site-packages/streamlit/runtime/metrics_util.py", line 725, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/private/tmp/apple-project-refresh-venv/lib/python3.13/site-packages/streamlit/elements/widgets/slider.py", line 839, in slider
+    return self._slider(
+  File "/private/tmp/apple-project-refresh-venv/lib/python3.13/site-packages/streamlit/elements/widgets/slider.py", line 887, in _slider
+    check_widget_policies(
+  File "/private/tmp/apple-project-refresh-venv/lib/python3.13/site-packages/streamlit/elements/lib/policies.py", line 146, in check_widget_policies
+    check_session_state_rules(
+  File "/private/tmp/apple-project-refresh-venv/lib/python3.13/site-packages/streamlit/elements/lib/policies.py", line 90, in check_session_state_rules
+    _LOGGER.warning(
+ok
+test_controls_reset_and_real_failure_demo (test_app.WorkbenchChecks.test_controls_reset_and_real_failure_demo) ... 2026-10-19 23:07:00.579 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_dated_contract_and_restoration (test_refresh.RefreshChecks.test_dated_contract_and_restoration) ... ok
+test_dated_peers_match_windows_and_definitions (test_refresh.RefreshChecks.test_dated_peers_match_windows_and_definitions) ... ok
+test_ledger_fact_assumption_separation (test_refresh.RefreshChecks.test_ledger_fact_assumption_separation) ... /Users/eleanormadden/Library/CloudStorage/OneDrive-purdue.edu/Fall 2026/AI finance applications/Project 1/Apple-Project-1/tests/test_refresh.py:56: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/eleanormadden/Library/CloudStorage/OneDrive-purdue.edu/Fall 2026/AI finance applications/Project 1/Apple-Project-1/docs/source_ledger.csv' mode='r' encoding='UTF-8'>
+  rows={r['id']:r for r in csv.DictReader((ROOT/'docs/source_ledger.csv').open())}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_nonconstant_selected_margin_baseline (test_refresh.RefreshChecks.test_nonconstant_selected_margin_baseline) ... ok
+test_reported_opening_and_stub_articulation (test_refresh.RefreshChecks.test_reported_opening_and_stub_articulation) ... ok
+test_risk_free_observation_and_wacc (test_refresh.RefreshChecks.test_risk_free_observation_and_wacc) ... /Users/eleanormadden/Library/CloudStorage/OneDrive-purdue.edu/Fall 2026/AI finance applications/Project 1/Apple-Project-1/tests/test_refresh.py:38: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/eleanormadden/Library/CloudStorage/OneDrive-purdue.edu/Fall 2026/AI finance applications/Project 1/Apple-Project-1/sources/dgs10_july2026.csv' mode='r' encoding='UTF-8'>
+  rates=list(csv.DictReader((ROOT/'sources/dgs10_july2026.csv').open()))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+FAIL
+test_selected_minimum_cash_bridge (test_refresh.RefreshChecks.test_selected_minimum_cash_bridge) ... ok
+test_selected_retrospective_baseline (test_refresh.RefreshChecks.test_selected_retrospective_baseline) ... ok
+test_timing_bridge_and_boundaries (test_refresh.RefreshChecks.test_timing_bridge_and_boundaries) ... ok
+test_base_case_balances_and_has_positive_fcfe (test_supplied.AppleChecks.test_base_case_balances_and_has_positive_fcfe) ... ok
+test_cash_distributions_do_not_create_value (test_supplied.AppleChecks.test_cash_distributions_do_not_create_value) ... ok
+test_cash_floor_refuses_even_though_balance_sheet_balances (test_supplied.AppleChecks.test_cash_floor_refuses_even_though_balance_sheet_balances) ... ok
+test_larger_rd_reduces_value (test_supplied.AppleChecks.test_larger_rd_reduces_value) ... ok
+test_missing_year_refuses (test_supplied.AppleChecks.test_missing_year_refuses) ... ok
+test_nan_refuses (test_supplied.AppleChecks.test_nan_refuses) ... ok
+test_ppe_error_hidden_by_offsetting_other_asset_refuses (test_supplied.AppleChecks.test_ppe_error_hidden_by_offsetting_other_asset_refuses) ... ok
+test_terminal_growth_must_be_below_discount_rate (test_supplied.AppleChecks.test_terminal_growth_must_be_below_discount_rate) ... ok
+test_typed_cash_refuses_even_without_updating_cached_totals (test_supplied.AppleChecks.test_typed_cash_refuses_even_without_updating_cached_totals) ... ok
+test_vendor_receivable_omission_from_cash_flow_refuses (test_supplied.AppleChecks.test_vendor_receivable_omission_from_cash_flow_refuses) ... ok
+
+======================================================================
+FAIL: test_risk_free_observation_and_wacc (test_refresh.RefreshChecks.test_risk_free_observation_and_wacc)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/eleanormadden/Library/CloudStorage/OneDrive-purdue.edu/Fall 2026/AI finance applications/Project 1/Apple-Project-1/tests/test_refresh.py", line 40, in test_risk_free_observation_and_wacc
+    self.assertEqual(float(observation['DGS10'])/100,new.RISK_FREE)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.046799999999999994 != 0.0468
+
+----------------------------------------------------------------------
+Ran 32 tests in 16.302s
+
+FAILED (failures=1, skipped=1)

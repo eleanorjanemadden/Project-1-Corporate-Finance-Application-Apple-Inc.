@@ -1,0 +1,13 @@
+item,required,location_or_url,title,duration_or_as_of,timestamp_index,access_checked,frozen_or_commit_id,notes
+Research-Evolution.pdf,yes,docs/research-evolution.md (draft content; final PDF missing),Research-Evolution.pdf,annual-base2025-09-27; prepared2026-10-19,,no human external access check,docs/frozen_manifest.csv; no new commit,See docs/completion_status.md; no completion or receipt implied
+Repository,yes,README.md (local only; stable accessible URL pending),Repository,annual-base2025-09-27; prepared2026-10-19,,no human external access check,docs/frozen_manifest.csv; no new commit,See docs/completion_status.md; no completion or receipt implied
+Visible executed output,yes,outputs/visible_output.json,Visible executed output,annual-base2025-09-27; prepared2026-10-19,,no human external access check,docs/frozen_manifest.csv; no new commit,See docs/completion_status.md; no completion or receipt implied
+Decision memo or deck,yes,docs/decision-memo.md (draft; final PDF pending),Decision memo or deck,annual-base2025-09-27; prepared2026-10-19,,no human external access check,docs/frozen_manifest.csv; no new commit,See docs/completion_status.md; no completion or receipt implied
+Validation-and-AI-Use.pdf,yes,docs/validation-and-ai-use.md (content; final PDF pending),Validation-and-AI-Use.pdf,annual-base2025-09-27; prepared2026-10-19,,no human external access check,docs/frozen_manifest.csv; no new commit,See docs/completion_status.md; no completion or receipt implied
+Video 1,yes,not recorded / not supplied,Video 1,not recorded,,no human external access check,pending,See docs/completion_status.md; no completion or receipt implied
+Transcript Video 1,yes,not recorded / not supplied,Transcript Video 1,not recorded,,no human external access check,pending,See docs/completion_status.md; no completion or receipt implied
+Video 2,yes,not recorded / not supplied,Video 2,not recorded,,no human external access check,pending,See docs/completion_status.md; no completion or receipt implied
+Transcript Video 2,yes,not recorded / not supplied,Transcript Video 2,not recorded,,no human external access check,pending,See docs/completion_status.md; no completion or receipt implied
+Video 3,yes,not recorded / not supplied,Video 3,not recorded,,no human external access check,pending,See docs/completion_status.md; no completion or receipt implied
+Transcript Video 3,yes,not recorded / not supplied,Transcript Video 3,not recorded,,no human external access check,pending,See docs/completion_status.md; no completion or receipt implied
+Optional deployed output,no,not recorded / not supplied,Optional deployed output,not recorded,,no human external access check,pending,See docs/completion_status.md; no completion or receipt implied
