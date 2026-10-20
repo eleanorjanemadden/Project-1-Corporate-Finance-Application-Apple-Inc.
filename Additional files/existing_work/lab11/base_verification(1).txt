@@ -1,0 +1,8 @@
+Base only: PASS; Lab 10 source unchanged.
+Prior CSV maximum difference: 0.0; tolerance: 1e-06 USD million.
+Prior Markdown matches: True. Original stdout matches: True.
+Maximum absolute accounting residual: 5.82076609135e-11 USD million.
+FY2030 operating profit: 194871.942549 USD million.
+FY2030 FCFE: 146540.355224 USD million.
+Existing annual-base valuation: 127.616804 USD/share.
+Changed-input scenarios and tests: NOT RUN; independent prediction and partner review pending.
