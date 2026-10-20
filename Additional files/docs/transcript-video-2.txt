@@ -1,0 +1,15 @@
+Video 2: Code and Validation
+
+This project separates the financial statement forecast valuation calculations and interface. Here this Python file apple_proforma.py builds the statements in the analysis file. It contains the original annual base analysis and shared valuation functions. And then through this dated refresh Python file, it produces the final July 31st valuation and its saved outputs.
+
+So to produce the final dated results, run this file from my project folder and use the environment setup instructions. So to dive deeper into the statement engine, I'm going to go back to apple_proforma.py. The forecast starts with reported financial inputs and labeled assumptions. Here revenue growth determines sales.
+
+Gross margin determines gross profit and SG&A and R&D assumptions determine operating profit. The model then forecasts working capital and investment. Apple's vendor non-trade receivables are tracked separately because they're operating assets which cause an increase to consume cash. Additionally, capital spending and depreciation determine the PP&E balance.
+
+And so operating, investing, and financing cash flows determine closing cash. Next, looking deeper into my analysis file, the valuation logic retains signed cash flows and requires terminal growth to remain below the discount rate. And so the free cash flow starts with an after tax operating profit, adds operating depreciation and amortization, and subtracts investment increases in operating working capital. Debt repayment, dividends, and buybacks are excluded, while accounting checks run before valuation.
+
+This helps prevent a financial result from being presented when the underlying statements don't reconcile. Next, I have the valuation summary, which confirms the uh valuation price of $119.60, which is the estimated common equivalent within a scenario range of $78.52 to $181.30. These results let a reviewer inspect the outcome without running the application. Next, I have the validation register.
+
+Let me switch to that tab. Okay. In this file, the checks record reconciliation residuals. So for checks defined as differences, zero or a value within the stated tolerance, this means that the relationship reconciles.
+
+Finally, passing these checks supports the calculations and accounting links, but it does not prove that the assumptions are economically correct inherently. So the terminal value represents approximately 68.91% of enterprise value and long-run assumptions materially affect the result. So that would play a significant factor into the share price that I ultimately valued Apple at. And so that is a brief overview of each of my project files.
